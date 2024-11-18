@@ -229,7 +229,7 @@ export default function PageBottomNavigation() {
                 <Box sx={{ display: "flex", flexDirection: "column", alignItems: "center", height: "85%", overflowY: "auto", backgroundColor: "#554FFF" }}>
                   {mapSpots ? mapSpots.map((spot: MapSpot) => (
                     <Card
-                      sx={{ maxWidth: 750, minHeight: 130, minWidth: 50, margin: 1, cursor: "pointer" }}
+                      sx={{ maxWidth: 750, minHeight: 130, width: 100, margin: 1, cursor: "pointer" }}
                       key={spot.guid}
                       onClick={() => router.push(`/mem/${spot.guid}`)}
                     >
